@@ -1,0 +1,11 @@
+# grid
+python-binance
+tinydb
+python-telegram-handler
+
+# web
+flask
+pandas
+
+# dev
+python-dotenv

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li><a href="/">ALL</a></li>
+  </ul>
+
+  <ul class="active">
+    <li><a>Active</a></li>
+    {% for symbol in trading_symbols %}
+    <li><a href="{{ url_for('symbol_detail', symbol=symbol) }}">{{ symbol }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <ul class="inactive">
+    <li><a>Inactive</a></li>
+    {% for symbol in not_trading_symbols %}
+    <li><a href="{{ url_for('symbol_detail', symbol=symbol) }}">{{ symbol }}</a></li>
+    {% endfor %}
+  </ul>
+
+  {% block content %}
+  {% endblock %}
+
+</body>
+
+</html>
