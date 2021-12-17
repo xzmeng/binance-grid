@@ -1,34 +1,6 @@
 {
     "DOGEUSDT": {
-        "sell_above": 0.21,
+        "bottom": 0.2,
         "top": 0.3
-    },
-    "BTCUSDT": {
-        "sell_above": 58000,
-        "top": 62000
-    },
-    "ETHUSDT": {
-        "sell_above": 4400,
-        "top": 4600
-    },
-    "BNBUSDT": {
-        "sell_above": 620,
-        "top": 650
-    },
-    "GALAUSDT": {
-        "sell_above": 0.72,
-        "bottom": 0.68
-    },
-    "SHIBUSDT": {
-        "sell_above": 0.00004360,
-        "top": 0.00005
-    },
-    "SOLUSDT": {
-        "sell_above": 220,
-        "top": 240
-    },
-    "ADAUSDT": {
-        "sell_above": 1.7,
-        "top": 2
     }
 }
